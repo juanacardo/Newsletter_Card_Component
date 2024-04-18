@@ -13,8 +13,8 @@ form.addEventListener('submit', function (e) {
   e.preventDefault();
   const isValid = pristine.validate();
   if (isValid) {
-    form.reset();
     form.submit();
+        form.reset();
     successMessage.classList.add('show');
   }
 });
